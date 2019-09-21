@@ -1,9 +1,10 @@
 <?php
-
+// Author: @ecodeblog
+// Date: 20-09-2019
 namespace App\Providers;
 use Illuminate\Support\Facades\Schema;
 
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider; // Don't forget to add this @ecodeblog
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +24,6 @@ class AppServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot(){
-        Schema::defaultStringLength(191);
+        Schema::defaultStringLength(191); // You may need to add this lines to your boot().  @ecodeblog
     }
 }
